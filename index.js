@@ -53,7 +53,7 @@ function startConfetti() {
 button.addEventListener("click", () => {
     startConfetti();
     cake.style.display = 'block';
-  
+    text.innerHTML = '';
     let message = `
     🎀✨ Feliz Aniversário, Ana! ✨🎀\n
     Hoje é o dia em que o universo se alinha para celebrar você! 🌟\n
@@ -69,7 +69,7 @@ button.addEventListener("click", () => {
     `.trim();
   
     let i = 0;
-  
+
     text.innerHTML = '';
   
     function letter() {
@@ -80,6 +80,10 @@ button.addEventListener("click", () => {
   
       if (i < message.length) {
         setTimeout(letter, 100);
+        button.disabled = true;
+      } else {
+        button.disabled = false;
+        location.reload();
       }
       text.scrollTop = text.scrollHeight;
     }
