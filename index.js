@@ -55,17 +55,20 @@ button.addEventListener("click", () => {
     cake.style.display = 'block';
     text.innerHTML = '';
     let message = `
-    🎀✨ Feliz Aniversário, Ana! ✨🎀\n
-    Hoje é o dia em que o universo se alinha para celebrar você! 🌟\n
-    Uma garota incrível, cheia de luz, sonhos e uma energia que contagia todos ao seu redor.\n
-    Que este novo ano da sua vida seja repleto de:\n
-    💖 Amor que aquece o coração,\n
-    🌈 Aventuras que fazem os olhos brilharem,\n
-    📚 Conquistas que enchem a alma de orgulho,\n
-    🎨 Criatividade para colorir cada dia,\n
-    e, claro, muitos doces para adoçar ainda mais a vida! 🍰🍭\n
-    Feliz 18tão!\n
-    AÍ está algo diferenciado,  Ass: você sabe quem!😉
+    ✨ Feliz Aniversário!!! ✨\n
+    Ao grandioso Pedro Moretti,\n 
+    desejo que o futuro te surpreenda\n
+    com tudo o que você merece:\n 
+    conquistas enormes,\n 
+    reconhecimento\n 
+    e uma jornada que só vai te elevar ainda mais.\n 
+    Que você seja exaltado pelas suas vitórias,\n 
+    e que a cada novo passo, seu brilho só aumente. \n
+    O que está por vir será épico!\n
+    Ao MELHOR, desejo todo sucesso do mundo!\n
+    saudaçães: Tiago cardoso.\n
+    🎉🎂🎈🎊🎁🎊🎈🎂🎉
+
     `.trim();
   
     let i = 0;
@@ -83,7 +86,9 @@ button.addEventListener("click", () => {
         button.disabled = true;
       } else {
         button.disabled = false;
-        location.reload();
+        setTimeout(() => {
+            location.reload();
+        },3000)
       }
       text.scrollTop = text.scrollHeight;
     }
